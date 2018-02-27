@@ -36,7 +36,6 @@
                                 <? if ($this->user['user_id'] == $c['user_id']) : ?>
 
                                             <a href="/?editComment/<?= $c['id'] ?>" class="btn btn-mini btn-info">редактировать</a>
-                                            <a href="/?reply/<?= $c['id'] ?>" class="btn btn-mini btn-primary">ответить</a>
                                             <a href="/?delComment/<?= $c['id'] ?>" class="btn btn-mini btn-danger"
                                                onclick="return confirm('Точно удалить?');">удалить</a>
 

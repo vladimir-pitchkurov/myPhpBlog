@@ -41,10 +41,10 @@
                                                onclick="return confirm('Точно удалить?');">удалить</a>
 
                                 <? endif ?>
-                                <? if ($this->user && ($this->user['user_id'] != $c['user_id'])): ?>
+                                <? if ($this->user): ?>
                                     <a href="/?reply/<?= $c['id'] ?>" class="btn btn-mini btn-primary">ответить</a>
 
-                                <? if(!$this->user) ?>
+                                <? else: ?>
                                     <a href="/?login">Для добавления и комментирования сообщений, выполните вход</a>
                                 <? endif ?>
                             </p>
